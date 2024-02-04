@@ -1,0 +1,19 @@
+
+/*
+@settings
+name: Better layout
+id: better-layout
+settings:
+  - id: file-line-width
+    title: max width of the file view
+    title.zh: 文件区域的最大宽度
+    type: variable-number-slider
+    min: 600
+    max: 1500
+    step: 50
+    default: 900
+    format: px
+*/
+body {
+	--file-line-width: 900px;
+}

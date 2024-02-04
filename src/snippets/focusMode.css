@@ -1,0 +1,40 @@
+/*
+@settings
+name: Focus Mode
+id: setting-focus-mode
+description: 会突出显示光标所在的行（不包括空行，包括表格行）
+settings:
+  -
+    id: focus-line-color
+    title: Focus Line Color
+    title.zh: 颜色
+    description: the color of focus line
+    description.zh: 突出显示的颜色
+    type: variable-color
+    format: rgb-values
+    default: 'rgb(138, 92,245)'
+  - id: focus-mode_table-enabled
+    title: Focus Table
+    title.zh: 表格启用
+    description: highlight the line when edit table
+    description.zh: 在编辑表格时会突出显示当前行
+    type: class-toggle
+    default: true
+*/
+:root {
+	--focus-line-color: 138, 92, 245;
+}
+
+/* current line */
+.cm-line.cm-active:not(:has(br), .HyperMD-codeblock, table *) {
+	/*  background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);*/
+	/*box-shadow: -16px 0 hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.2);*/
+	outline: 2px dashed rgba(var(--focus-line-color), 0.8);
+	outline-offset: 8px;
+	border-radius: 4px;
+	box-shadow: 0 0 0 4px rgba(var(--focus-line-color), 0.08);
+	background-color: rgba(var(--focus-line-color), 0.08);
+}
+.focus-mode_table-enabled tr:has(td:not(.is-selected) .cm-line.cm-active) {
+	outline: 2px dashed rgba(var(--focus-line-color), 0.8);
+}
