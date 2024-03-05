@@ -21,6 +21,61 @@ body {
   --h6-color: var(--color-blue);
 }
 
+.inline-title,
+.HyperMD-header-1,
+.HyperMD-list-line .cm-header-1,
+.HyperMD-header-2,
+.HyperMD-list-line .cm-header-2,
+.HyperMD-header-3,
+.HyperMD-list-line .cm-header-3,
+.HyperMD-header-4,
+.HyperMD-list-line .cm-header-4,
+.HyperMD-header-5,
+.HyperMD-list-line .cm-header-5,
+.HyperMD-header-6,
+.HyperMD-list-line .cm-header-6 {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(45deg, #ff5656, orange);
+}
+
+.inline-title,
+.HyperMD-header-1,
+.HyperMD-list-line .cm-header-1 {
+  background-image: linear-gradient(45deg, var(--color-red), var(--color-orange));
+}
+
+.HyperMD-header-2,
+.inline-title[data-level="2"],
+.HyperMD-list-line .cm-header-2 {
+  background-image: linear-gradient(45deg, var(--color-orange), var(--color-yellow));
+}
+
+.HyperMD-header-3,
+.inline-title[data-level="3"],
+.HyperMD-list-line .cm-header-3 {
+  background-image: linear-gradient(45deg, var(--color-yellow), var(--color-green));
+}
+
+.HyperMD-header-4,
+.inline-title[data-level="4"],
+.HyperMD-list-line .cm-header-4 {
+  background-image: linear-gradient(45deg, var(--color-green), var(--color-cyan));
+}
+
+.HyperMD-header-5,
+.inline-title[data-level="5"],
+.HyperMD-list-line .cm-header-5 {
+  background-image: linear-gradient(45deg, var(--color-cyan), var(--color-blue));
+}
+
+.HyperMD-header-6,
+.inline-title[data-level="6"],
+.HyperMD-list-line .cm-header-6 {
+  background-image: linear-gradient(45deg, var(--color-blue), var(--color-purple));
+}
+
 /*
 @settings
 name: Better layout
