@@ -3,12 +3,54 @@
 name: Better Color
 id: better-color
 settings:
-  - title: 红色
+  - title: red
     id: color-red
     type: variable-color
     format: hex
     alt-format:
      - id: color-red-rgb
+       format: rgb-values
+  - title: orange
+    id: color-orange
+    type: variable-color
+    format: hex
+    alt-format:
+     - id: color-orange-rgb
+       format: rgb-values
+  - title: yellow
+    id: color-yellow
+    type: variable-color
+    format: hex
+    alt-format:
+     - id: color-yellow-rgb
+       format: rgb-values
+  - title: green
+    id: color-green
+    type: variable-color
+    format: hex
+    alt-format:
+     - id: color-green-rgb
+       format: rgb-values
+  - title: blue
+    id: color-blue
+    type: variable-color
+    format: hex
+    alt-format:
+     - id: color-blue-rgb
+       format: rgb-values
+  - title: cyan
+    id: color-cyan
+    type: variable-color
+    format: hex
+    alt-format:
+     - id: color-cyan-rgb
+       format: rgb-values
+  - title: purple
+    id: color-purple
+    type: variable-color
+    format: hex
+    alt-format:
+     - id: color-purple-rgb
        format: rgb-values
 */
 body {
