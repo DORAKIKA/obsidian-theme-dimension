@@ -300,38 +300,6 @@ settings:
   font-size: 2em;
 }
 
-.markdown-preview-section div:has(.block-language-button button.w-1\/5) {
-  width: 20%;
-  display: inline-block;
-}
-.markdown-preview-section div:has(.block-language-button button.w-1\/5) .block-language-button button {
-  width: 100%;
-}
-
-.markdown-preview-section div:has(.block-language-button button.w-2\/5) {
-  width: 40%;
-  display: inline-block;
-}
-.markdown-preview-section div:has(.block-language-button button.w-2\/5) .block-language-button button {
-  width: 100%;
-}
-
-.markdown-preview-section div:has(.block-language-button button.w-3\/5) {
-  width: 60%;
-  display: inline-block;
-}
-.markdown-preview-section div:has(.block-language-button button.w-3\/5) .block-language-button button {
-  width: 100%;
-}
-
-.markdown-preview-section div:has(.block-language-button button.w-4\/5) {
-  width: 80%;
-  display: inline-block;
-}
-.markdown-preview-section div:has(.block-language-button button.w-4\/5) .block-language-button button {
-  width: 100%;
-}
-
 body {
   --icon-star: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%229%22%20height%3D%2210%22%20viewBox%3D%220%200%209%2010%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M4.37316%200.851288C4.47459%200.59117%204.85275%200.624255%204.90746%200.898033L5.48015%203.76369C5.49882%203.85714%205.56384%203.93463%205.65263%203.96925L8.37531%205.03085C8.63543%205.13228%208.60234%205.51044%208.32856%205.56515L5.4629%206.13784C5.36945%206.15651%205.29197%206.22153%205.25735%206.31032L4.19574%209.033C4.09432%209.29312%203.71616%209.26003%203.66145%208.98625L3.08876%206.12059C3.07008%206.02714%203.00506%205.94966%202.91627%205.91504L0.193598%204.85343C-0.0665204%204.75201%20-0.0334351%204.37385%200.240343%204.31914L3.106%203.74645C3.19945%203.72777%203.27694%203.66275%203.31156%203.57396L4.37316%200.851288Z%22%20fill%3D%22url(%23paint0_linear_1325_2977)%22%2F%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22paint0_linear_1325_2977%22%20x1%3D%229.7012%22%20y1%3D%220.396946%22%20x2%3D%22-0.813864%22%20y2%3D%220.0424293%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop%20stop-color%3D%22%23F8E42E%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23FF7D54%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3C%2Fsvg%3E");
   --embed-block-shadow-hover: 0 0 0 3px hsla(var(--color-accent-hsl), 0.2);

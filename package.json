@@ -1,11 +1,14 @@
 {
-  "name": "obsidian-theme-dimension",
-  "version": "1.0.0",
-  "scripts": {
-    "version": "node version-bump.mjs && git add manifest.json versions.json",
-	"build": "node ./build/theme.mjs"
-  },
-  "devDependencies": {
-    "sass": "^1.70.0"
-  }
+	"name": "obsidian-theme-dimension",
+	"version": "1.0.0",
+	"scripts": {
+		"version": "node version-bump.mjs && git add manifest.json versions.json",
+		"build": "node ./build/theme.mjs",
+		"prepare": "husky",
+		"pre-commit": "pnpm run build && git add theme.css"
+	},
+	"devDependencies": {
+		"husky": "^9.0.11",
+		"sass": "^1.70.0"
+	}
 }
