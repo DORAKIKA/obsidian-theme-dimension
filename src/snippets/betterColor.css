@@ -62,7 +62,7 @@ body {
 	--h5-color: var(--color-cyan);
 	--h6-color: var(--color-blue);
 }
-.inline-title,
+/* .inline-title, */
 .HyperMD-header-1,
 .HyperMD-list-line .cm-header-1,
 .HyperMD-header-2,
@@ -74,16 +74,25 @@ body {
 .HyperMD-header-5,
 .HyperMD-list-line .cm-header-5,
 .HyperMD-header-6,
-.HyperMD-list-line .cm-header-6 {
+.HyperMD-list-line .cm-header-6,
+.markdown-rendered :is(h1, h2, h3, h4, h5, h6) {
 	background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent;
 	background-image: linear-gradient(45deg, #ff5656, orange);
 	width: fit-content;
+	display: flex;
+	align-items: center;
 }
-.inline-title,
+.print :is(h1, h2, h3, h4, h5, h6) {
+	font-weight: 400;
+}
+/* .inline-title, */
 .HyperMD-header-1,
-.HyperMD-list-line .cm-header-1 {
+.HyperMD-list-line .cm-header-1,
+.markdown-rendered h1 {
+	--h-color: var(--color-red);
+	--h-tip: "H1";
 	background-image: linear-gradient(
 		45deg,
 		var(--color-red),
@@ -92,7 +101,10 @@ body {
 }
 .HyperMD-header-2,
 .inline-title[data-level="2"],
-.HyperMD-list-line .cm-header-2 {
+.HyperMD-list-line .cm-header-2,
+.markdown-rendered h2 {
+	--h-color: var(--color-orange);
+	--h-tip: "H2";
 	background-image: linear-gradient(
 		45deg,
 		var(--color-orange),
@@ -101,7 +113,10 @@ body {
 }
 .HyperMD-header-3,
 .inline-title[data-level="3"],
-.HyperMD-list-line .cm-header-3 {
+.HyperMD-list-line .cm-header-3,
+.markdown-rendered h3 {
+	--h-color: var(--color-yellow);
+	--h-tip: "H3";
 	background-image: linear-gradient(
 		45deg,
 		var(--color-yellow),
@@ -111,7 +126,10 @@ body {
 
 .HyperMD-header-4,
 .inline-title[data-level="4"],
-.HyperMD-list-line .cm-header-4 {
+.HyperMD-list-line .cm-header-4,
+.markdown-rendered h4 {
+	--h-color: var(--color-green);
+	--h-tip: "H4";
 	background-image: linear-gradient(
 		45deg,
 		var(--color-green),
@@ -120,7 +138,10 @@ body {
 }
 .HyperMD-header-5,
 .inline-title[data-level="5"],
-.HyperMD-list-line .cm-header-5 {
+.HyperMD-list-line .cm-header-5,
+.markdown-rendered h5 {
+	--h-color: var(--color-cyan);
+	--h-tip: "H5";
 	background-image: linear-gradient(
 		45deg,
 		var(--color-cyan),
@@ -129,7 +150,10 @@ body {
 }
 .HyperMD-header-6,
 .inline-title[data-level="6"],
-.HyperMD-list-line .cm-header-6 {
+.HyperMD-list-line .cm-header-6,
+.markdown-rendered h6 {
+	--h-color: var(--color-blue);
+	--h-tip: "H6";
 	background-image: linear-gradient(
 		45deg,
 		var(--color-blue),
